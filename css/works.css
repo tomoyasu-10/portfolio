@@ -1,0 +1,288 @@
+/* -------------------------- */
+/* works-kv
+/* -------------------------- */
+.overview-text,
+.works-info-list,
+.description-text,
+.description-list{
+    line-height: 1.8;
+    list-style: disc;
+    list-style-position: inside;
+    /*margin-top: 10px;*/
+}
+.page-title-wrapper.works-page{
+    padding-top: 52%;
+    height: 0;
+    background-size: cover;
+    background-position: center;
+}
+.page-title.works-page{
+    font-size: 3rem;
+    bottom: 6.7%;
+    left: 7.1%;
+    text-align: left;
+}
+.page-title_jp{
+    text-align-last: left;
+}
+
+/* kv-bg */
+.rc-creation-bg{
+    background-image: url(../images/img_rc-creation.png);
+}
+.raula-bg{
+    background-image: url(../images/img_raula.png);
+}
+.tech-junior-bg{
+    background-image: url(../images/img_tech-junior.png);
+}
+.tech-camp-bg{
+    background-image: url(../images/img_tech-camp.png);
+}
+.jerateriamako-bg{
+    background-image: url(../images/img_jelateriamako.png);
+}
+.lightlounge-bg{
+    background-image: url(../images/img_light-lounge.png);
+}
+.invoice-bg{
+    background-image: url(../images/img_invoice.png);
+}
+.design-school-bg{
+    background-image: url(../images/img_design_school.png);
+}
+.point-company-bg{
+    background-image: url(../images/img_point_company.png);
+}
+.lpcreate-bg{
+    background-image: url(../images/img_lpcreate.png);
+}
+.abcd-bg{
+    background-image: url(../images/img_abcd.png);
+}
+.intern-bg{
+    background-image: url(../images/img_intern.png);
+}
+
+/* -------------------------- */
+/* section
+/* -------------------------- */
+.works-section-title{
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.works-section-title_en{
+    font-size: 1.2rem;
+    color: #777;
+}
+.works-section-title::before{
+    content: "";
+    display: inline-block;
+    height: 20px;
+    width: 6px;
+    background-color: #333;
+    vertical-align: -3px;
+}
+.overview-text{
+    background-color: #f0f0f0;
+    padding: 10px;
+}
+.description-list{
+    background-color: #f0f0f0;
+    padding: 10px 10px 10px 22px;
+}
+.description-text{
+    background-color: #f0f0f0;
+    padding: 10px;
+}
+
+/* -------------------------- */
+/* overview
+/* -------------------------- */
+.overview-text{
+    margin-bottom: 20px;
+    /*margin-bottom: 10px;*/
+}
+.works-info-list{
+    padding: 24px;
+    background-color: #f0f0f0;
+}
+.works-info-item{
+    overflow-wrap: break-word;
+}
+.img-bg{
+    background-color: #fff;
+}
+
+/* -------------------------- */
+/* process
+/* -------------------------- */
+.process-title{
+    font-size: 1.6rem;
+    font-weight: bold;
+    margin: 60px 0 40px;
+    /*margin: 60px 0 10px;*/
+}
+.process-title::after{
+    content: "";
+    display: block;
+    width: 80%;
+    height: 2px;
+    background-color: #333;
+    margin-top: 6px;
+}
+.process-subheading{
+    /*margin: 29px 0 0;*/
+    margin: 40px 0 -10px;
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+.process-subheading-ivc{
+    margin-top: 56px;
+}
+.description-img-wrapper,
+.description-text{
+    margin: 20px 0;
+    /*margin: 0;*/
+}
+.presentation-text-ivc{
+    margin: 20px 0;
+}
+
+/* リンクボタン */
+.link-btn{
+    margin-top: 60px;
+}
+.link-btn::after{
+    content: "";
+}
+.link-btn::before{
+    content: "<";
+    position: absolute;
+    left: 30px;
+    transition: .3s;
+}
+.link-btn:hover::before{
+    transform: translateX(-6px);
+    transition: .3s;
+}
+
+/*スクロールリンクの形状*/
+.scroll-top {
+	/*表示位置*/
+	position: fixed;
+	right: 20px;
+	bottom: 10px;
+	z-index: 2;
+	/*はじめは非表示*/
+	opacity: 0;
+	visibility: hidden; 
+	transition: opacity .5s, visibility .5s; /*それぞれに0.5秒の変化のアニメーション*/
+	/*縦書き*/
+	-webkit-writing-mode: vertical-rl;
+    -ms-writing-mode: tb-rl;
+    writing-mode: vertical-rl;
+	/*改行禁止*/
+    white-space: nowrap;
+	/*矢印の動き*/
+	animation: arrowmove 1s ease-in-out infinite;
+}
+
+@keyframes arrowmove{
+      0%{bottom:20px;}
+      50%{bottom:25px;}
+     100%{bottom:20px;}
+ }
+
+
+/*.scroll-viewクラスがついたら出現*/
+.scroll-top.scroll-view {
+	opacity: 1;
+	visibility: visible;
+}
+
+/*リンク全体の aタグの形状*/
+.scroll-top a {
+	text-decoration: none;
+	color: #666;
+	text-transform: uppercase;
+	font-size:1.6rem;
+    display: block;
+}
+
+/*スクロールリンクの形状*/
+
+.js-scroll a::after{
+	content:"";
+	position: absolute;
+	top:0;
+	right:0;
+	width:1px;
+	height: 50px;
+	background:#666;
+}
+
+.js-scroll a::before {
+    content: "";
+    position: absolute;
+    top: 30px;
+    right: -6px;
+    width: 1px;
+    height: 20px;
+    background: #666;
+    transform: skewX(-31deg);
+}
+
+/*Edge IE11 hack*/
+_:-ms-lang(x), .js-scroll a::before{
+	right:-11px;
+}
+
+/*ページトップリンクの形状*/
+
+.js-pagetop a::after{
+	content:"";
+	position: absolute;
+	top:0;
+	right:0;
+	width:1px;
+	height: 50px;
+	background:#666;
+}
+
+.js-pagetop a::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: -6px;
+    width: 1px;
+    height: 20px;
+    background: #666;
+    transform: skewX(31deg);
+}
+
+/*Edge IE11 hack*/
+_:-ms-lang(x), .js-pagetop a::before{
+	right:0;
+}
+
+
+@media screen and (max-width:768px){
+    .page-title-wrapper.works-page{
+        padding-top: 75%;
+    }
+    .page-title.works-page{
+        font-size: 6vw;
+        bottom: 5%;
+        left: 5%;
+    }
+    .presentation-document-iframe{
+        max-width: 680px;
+    }
+}
+@media screen and (max-width:375px){
+    .presentation-document-iframe{
+        max-width: 350px;
+    }
+}
