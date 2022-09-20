@@ -4,155 +4,223 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Watanabe Tomoyasu | Webデザイナーを目指す（渡邉友靖）のポートフォリオサイトの自己紹介ページ</title>
-    <link rel="stylesheet" href="../css/reset.css">
-    <link rel="stylesheet" href="../css/about.css">
-    <link rel="stylesheet" href="../css/common.css">
+    <title>Watanabe Tomoyasu | Webデザイナーを目指す(Watanabe Tomoyasu)のポートフォリオサイトです</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/custom.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <meta property="og:url" content="https://tomo-zero.netlify.app/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Webデザイナーを目指す(Watanabe Tomoyasu)のポートフォリオサイトです">
+    <meta property="og:description" content="Watanabe Tomoyasuのポートフォリオサイトです">
+    <meta property="og:image" content="https://drive.google.com/drive/my-drive">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@zeroofzero00000">
+    <meta name="twitter:player" content="@zeroofzero00000">
 </head>
 <body>
     <!-- header -->
     <header class="header flex-rr">
-        <h1 class="site-title"><a href="../index.html">Watanabe Tomoyasu</a></h1>
+        <h1 class="site-title"><a href="#">Watanabe Tomoyasu</a></h1>
         <nav class="header-nav">
             <ul class="nav-list flex-rc">
-                <li class="nav-item"><a href="../index.html">Works</a></li>
-                <li class="nav-item current"><a href="#">About</a></li>
+                <li class="nav-item current"><a href="#works">Works</a></li>
+                <li class="nav-item"><a href="about/index.html">About</a></li>
             </ul>
         </nav>
     </header>
     <!-- //header -->
-
     <!-- main -->
     <main>
-        <div class="page-title-wrapper about-page-title">
-            <h1 class="page-title title-center">
-                About me
-                <span class="page-title_jp">自己紹介</span>
-            </h1>
+        <!-- kv-wrapper -->
+        <div class="kv-wrapper kv-animation kv-animation-bg">
+            <div class="kv-copy text-center">
+                <!--<p class="my-name">Watanabe Tomoyasu</p>-->
+                <p class="kv-name"><span class="blurTrigger">あなたの言葉や想いに貢献するために。</span></p>
+                <p class="kv-message">
+                    <span class="blurTrigger-sub">To Good Designer</span>
+                </p>
+            </div>
         </div>
+        <!-- //kv-wrapper -->
+        <!-- featured works -->
+        <section class="section-wrapper main-bg">
+            <div class="section-inner section-size">
+                <h2 class="section-title text-center">Featured Works</h2>
+                <ul class="works-list flex-rc">
+                    <li class="works-item works-item-featured">
+                        <a href="works/invoice/index.html">
+                            <div class="works-img-wrapper">
+                                <img src="./images/mock_thum_invoice.png" alt="制作実績のモックアップ">
+                            </div>
+                            <h3 class="works-title">
+                                INVOICE
+                                <span class="works-category">コーポレートサイト</span>
+                            </h3>
+                        </a>
+                    </li>
+                    <li class="works-item works-item-featured">
+                        <a href="works/LPcreate/index.html">
+                            <div class="works-img-wrapper">
+                                <img src="images/mock_thum_lpcreate.png" alt="制作実績のモックアップ">
+                            </div>
+                            <h3 class="works-title">
+                                LPcreate
+                                <span class="works-category">ランディングページ</span>
+                            </h3>
+                        </a>
+                    </li>
+                    <li class="works-item works-item-featured">
+                        <a href="works/lightlounge/index.html">
+                            <div class="works-img-wrapper">
+                                <img src="./images/mock_thum_Light-Lounge.png" alt="制作実績のモックアップ">
+                            </div>
+                            <h3 class="works-title">
+                                Light Lounge
+                                <span class="works-category">ランディングページ</span>
+                            </h3>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!-- //featured works-->
+        <!-- other works -->
         <section id="area-2" class="section-wrapper main-bg">
-            <div class="section-inner">
-                <h2 class="section-title">
-                    Watanabe Tomoyasu
-                    <span class="section-title_jp">渡邉 友靖</span>
+            <div class="section-inner section-size">
+                <h2 class="section-title text-center">Other Works</h2>
+                <ul class="works-list flex-rc">
+                    <li class="works-item">
+                        <a href="works/jerateriamako/index.html">
+                            <div class="works-img-wrapper">
+                                <img src="images/mock_thum_Gelateria-Mako.png" alt="制作実績のモックアップ">
+                            </div>
+                            <h3 class="works-title">
+                                Gelateria Mako
+                                <span class="works-category">店舗サイト</span>
+                            </h3>
+                        </a>
+                    </li>                    
+                    <li class="works-item">
+                        <a href="works/rc-creation/index.html">
+                            <div class="works-img-wrapper">
+                                <img src="./images/mock_thum_rc-creation.png" alt="制作実績のモックアップ">
+                            </div>
+                            <h3 class="works-title">
+                                RC Creation inc.
+                                <span class="works-category">ファーストビューデザイン</span>
+                            </h3>
+                        </a>
+                    </li>
+                    <li class="works-item">
+                        <a href="works/raula/index.html">
+                            <div class="works-img-wrapper">
+                                <img src="./images/mock_thum_raula.png" alt="制作実績のモックアップ">
+                            </div>
+                            <h3 class="works-title">
+                                Raula
+                                <span class="works-category">ファーストビューデザイン</span>
+                            </h3>
+                        </a>
+                    </li>
+                    <li class="works-item">
+                        <a href="works/tech-junior/index.html">
+                            <div class="works-img-wrapper">
+                                <img src="./images/mock_thum_tech-junior.png" alt="制作実績のモックアップ">
+                            </div>
+                            <h3 class="works-title">
+                                TECH JUNIOR
+                                <soan class="works-category">ファーストビューデザイン</soan>
+                            </h3>
+                        </a>
+                    </li>
+                    <li class="works-item">
+                        <a href="works/tech-camp/index.html">
+                            <div class="works-img-wrapper">
+                                <img src="./images/mock_thum_tech-camp.png" alt="制作実績のモックアップ">
+                            </div>
+                            <h3 class="works-title">
+                                TECH CAMP
+                                <span class="works-category">Webバナー</span>
+                            </h3>
+                        </a>
+                    </li>
+                    <li class="works-item">
+                        <a href="works/design-school/index.html">
+                            <div class="works-img-wrapper">
+                                <img src="./images/mock_thum_design_school.png" alt="制作実績のモックアップ">
+                            </div>
+                            <h3 class="works-title">
+                                Design School
+                                <span class="works-category">Webバナー</span>
+                            </h3>
+                        </a>
+                    </li>
+                    <li class="works-item">
+                        <a href="works/point-company/index.html">
+                            <div class="works-img-wrapper">
+                                <img src="./images/mock_thum_point_company.png" alt="制作実績のモックアップ">
+                            </div>
+                            <h3 class="works-title">
+                                Point Company
+                                <span class="works-category">Webバナー</span>
+                            </h3>
+                        </a>
+                    </li>
+                    <li class="works-item">
+                        <a href="works/abcd/index.html">
+                            <div class="works-img-wrapper">
+                                <img src="./images/mock_thum_abcd.png" alt="制作実績のモックアップ">
+                            </div>
+                            <h3 class="works-title">
+                                ABCDホーム
+                                <span class="works-category">Webバナー</span>
+                            </h3>
+                        </a>
+                    </li>
+                    <li class="works-item">
+                        <a href="works/intern/index.html">
+                            <div class="works-img-wrapper">
+                                <img src="images/mock_thum_intern.png" alt="制作実績のモックアップ">
+                            </div>
+                            <h3 class="works-title">
+                                Intern
+                                <span class="works-category">Webバナー</span>
+                            </h3>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!-- //other works -->
+        <!-- about -->
+        <section class="section-wrapper main-bg about-bg">
+            <div class="section-inner about-top-inner">
+                <h2 class="section-title section-title-aboutme">
+                    About me
+                    <span class="section-title_jp section-title-top_jp">自己紹介</span>
                 </h2>
-                <div class="profile-wrapper flex-rc">
-                    <div class="profile-img-wrapper">
-                        <img src="../images/profile-img.png" alt="◯◯の写真">
-                    </div>
-                    <p class="profile-text multi-lines s-text-wrapper">
-                        渡邉友靖（わたなべともやす）と申します。<br class="profile-br">出身は新潟県です。<br class="profile-br">1985年生まれの36歳です。16年前陸上自衛官の道を志し、東日本大震災や長野県御嶽山噴火などの災害派遣を通じ、厳しい環境下における任務は自信になる経験でした。民生の安定にも微力ながら力になれたのではと思っています。今後はデザインの力で多くの人に貢献したいと強く思っています。そのために、自身の足りない部分を埋める努力を継続していきます。<!--<br class="profile-br">学生時代は仲間とともにサッカーに明け暮れていました。<br class="profile-br">本気でプロを目指しましたが夢叶わず防衛省陸上自衛隊に<br class="profile-br">入隊しました。約17年間勤務し、2021年8月に退職しました。<br class="profile-br">その後は本気でWebデザイナーを目指し、勉強を開始しています。<br class="profile-br">よろしくお願いします。-->
-                    </p>
-                </div>
-                <section class="subsection flex-rc">
-                    <h3 class="prf-subsection-title">Characteristics</h3>
-                    <div class="prf-subsection-inner">
-                        <p class="prf-subsection-title_jp">私の特徴</p>
-                        <p class="prf-subsection-text multi-lines s-text-wrapper">
-                            行動力があると思っています。<br>
-                            前職時のエピソードとして、災害派遣に従事していた際に、活動に必要な資材が急遽発生しました。私は速やかに近傍の業者へ連絡しつつ、部内の手続きを並行して実施し、通常数日かかる手続きを1日で完了させ、円滑な災害派遣活動に寄与できました。このように行動できたのは、貢献できる人間でありたいと心から思っているからです。これは今後も変わることはないと思います。
-                        </p>
-                    </div>
-                </section>
-                <section class="subsection flex-rc">
-                    <h3 class="prf-subsection-title">Attitude</h3>
-                    <div class="prf-subsection-inner">
-                        <p class="prf-subsection-title_jp">デザインに対する姿勢</p>
-                        <p class="prf-subsection-text multi-lines s-text-wrapper">
-                            良いデザインを学ぶことも大事ですが、同様に悪いデザインを学ぶことも重要だと思っています。そのため、どのようなデザインが良くないと言われているのかも勉強してします。良いデザイン、悪いデザインの違いを理解することが、理想のデザイナーへ近づくために必要なことだと考えています。
-                        </p>
-                    </div>
-                </section>
-                <section class="subsection flex-rc">
-                    <h3 class="prf-subsection-title">Idal designer</h3>
-                    <div class="prf-subsection-inner">
-                        <p class="prf-subsection-title_jp">理想のデザイナー像</p>
-                        <p class="prf-subsection-text multi-lines s-text-wrapper">
-                            クライアント、ユーザーの抽象的な要望等に対して、的確に具現化できるデザイナーになりたいです。そのために、スキル、感性、経験値を積み上げ、磨き、行動し学び続けたいと思っています。いつか見えない部分まで（想い・情熱）感じ取れ、クライアント、ユーザーの発展に貢献できるデザイナーになりたいです。
-                        </p>
-                    </div>
-                </section>
-                <section class="subsection flex-rc">
-                    <h3 class="prf-subsection-title">Skills</h3>
-                    <div class="prf-subsection-inner s-text-wrapper">
-                        <p class="prf-subsection-title_jp">スキル</p>
-                        <h4 class="skill-category">design</h4>
-                        <ul class="skill-list_design">
-                            <li class="skill-item">レイアウト、配色、フォント画像の扱いなどに対する基礎知識</li>
-                            <li class="skill-item">Illustratorを使用したバナー制作、ロゴ制作</li>
-                            <li class="skill-item">Photoshopを使用した写真のレタッチ、合成</li>
-                            <li class="skill-item">Figmaを使用したWebデザイン作成</li>
-                        </ul>
-                        <h4 class="skill-category">coding</h4>
-                        <ul class="skill-list_design">
-                            <li class="skill-item">HTML/CSS/jQueryを使用したコーディング</li>
-                        </ul>
-                    </div>
-                </section>
-                <section class="subsection flex-rc">
-                    <h3 class="prf-subsection-title">Career</h3>
-                    <div class="prf-subsection-inner s-text-wrapper">
-                        <p class="prf-subsection-title_jp">経歴</p>
-                        <ul class="career-list">
-                            <li class="career-item flex-rr">
-                                <div class="career-date accent-bg">NOW</div>
-                                <p class="career-text latest">Webデザイナーを目指し転職活動中</p>
-                            </li>
-                            <li class="career-item flex-rr">
-                                <div class="career-date">2021年/9月</div>
-                                <p class="career-text">Webデザイナーを目指し学習開始</p>
-                            </li>
-                            <li class="career-item flex-rr">
-                                <div class="career-date">2021年/8月</div>
-                                <p class="career-text">防衛省陸上自衛隊退職<br>（株）識学マスタートレーニング受講
-                                </p>
-                            </li>
-                             <li class="career-item flex-rr">
-                                <div class="career-date">2020年/12月</div>
-                                <p class="career-text">幹部候補に指定<br>
-                                </p>
-                            </li>
-                            <li class="career-item flex-rr">
-                                <div class="career-date">2004年/3月</div>
-                                <p class="career-text">防衛省陸上自衛隊入隊<br>
-                                </p>
-                            </li>
-                            <li class="career-item flex-rr">
-                                <div class="career-date">2004年/3月</div>
-                                <p class="career-text">新潟県立豊栄高等学校卒業</p>
-                            </li>
-                            <li class="career-item flex-rr">
-                                <div class="career-date">1985年/9月</div>
-                                <p class="career-text">新潟県生まれ</p>
-                            </li>
-                        </ul>
-                    </div>
-                </section>
-        </div> 
+                <p class="about-lead multi-lines s-text-wrapper bottom-about-top">
+                    <span class="about-my-description">16年前に感じたデザインの魅力</span>渡邉友靖（わたなべともやす）と申します。16年前に初めて東京で買い物をした際に、色鮮やかな洋服やお洒落なお店、大きな広告にポスターなど目を奪われる多くのデザインに興味が湧き、デザインの正体について本気で勉強したいと思いました。しかし当時は悩んだ結果、違う道を選択しました。16年経ちましたが、改めて挑戦したいと思い決断しました。<!--<br class="about-top">プログラミングという所から<br class="about-top">Webデザイナーの存在を知り、<br class="about-top">-->
+                </p>
+                <a href="about/index.html" class="btn link-btn top-btn">view my profile</a>
+            </div>
         </section>
-        <section class="thanks-about-inner">
-        <div>
-        <p class="thanks-message text-center thanks-message-text">
-            Thank you for coming<br class="sp-br">
-            to my portfolio.
-        </p>
-        <a href="../index.html" class="btn link-btn block-center about-btn">view my works</a>
-        </div>
-        </section>
+        <!-- //about -->
     </main>
     <!-- //main -->
     <!-- footer -->
     <footer class="footer text-center main-bg">
-        <a href="https://twitter.com/zeroofzero00000"><img class="twitter-logo" src="../images/twitter_logo_black.png" alt="Twitter"></a>
-        <p class="js-scroll scroll-top scroll-view"><a href="#area-2">Scroll</a></p>
-        <p class="js-pagetop scroll-top"><a href="#">Page Top</a></p>
-        <p>&copy;2021 Watanabe Tomoyasu</p>
+       <p class="js-scroll scroll-top scroll-view"><a href="#area-2">Scroll</a></p>
+       <p class="js-pagetop scroll-top"><a href="#">Page Top</a></p>
+       <p>&copy;2022 Watanabe Tomoyasu</p>
     </footer>
     <!-- //footer -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> <!-- jQueryを読み込む -->
-    <script src="../js/script.js"></script> <!-- jsファイルを読み込む-->
+    <script src="./js/script.js"></script> <!-- jsファイルを読み込む-->
 </body>
 </html>
