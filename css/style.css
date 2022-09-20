@@ -1,183 +1,293 @@
 /* -------------------------- */
-/* Base
+/* kv
 /* -------------------------- */
-html {
-    font-size: 62.5%;
-}
-
-body {
-    font-size: 1.4rem;
-    color: white;
-    font-family: 'Helvetica', 'Noto Sans', 'Noto Sans JP', sans-serif;
-    line-height: 1;
-    background-color: black;
-}
-
-img {
-    width: 100%;
-    height: 250px;
-    vertical-align: bottom;
-}
-
-a {
-    text-decoration: none;
-}
-
-ul {
-    list-style: none;
-}
-
-/*heder*/
-.nav-list {
-    display: flex;
-    justify-content: center;
-    color: white;
-}
-
-.kv-sub {
-    display: block;
-    margin-left: 40px;
-}
-
-.nav-item {
-    padding: 3px;
+.kv-wrapper{
+    height: 500px;
     position: relative;
-    z-index: 1;
-    margin: 2rem 2rem 2rem 2rem;
+   
 }
-
-.nav-item::before {
-    background: #ffffff;
-    content: "";
-    display: block;
-    width: 100%;
-    height: 0.1px;
+.kv-animation{
+    color: #ffffff;
+    background-image: linear-gradient(90deg,#e6551e,#f58c2d);
+    -webkit-clip-path: polygon(0 0,100% 15%, 100% 85%, 0 100%);
+}
+.kv-copy{
     position: absolute;
-    left: 0;
-    bottom: 0;
-    margin: auto;
-    transform: scale(0, 1);
-    transform-origin: right top;
-    transition: transform .4s;
-    z-index: -1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 100%;
 }
-
-.nav-item:hover {
-    color: #fff;
+.my-name{
+    font-size: 2.5rem;
+    margin-bottom: 20px;
 }
-
-.nav-item:hover::before {
-    transform-origin: left top;
-    transform: scale(1, 1);
+.kv-name{
+    font-size: 3.3rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    letter-spacing: 0.1rem;
 }
-
-.kv-wrapper {
-    background-image: url(../images/kv.jpg);
-    height: 800px;
-    background-size: cover;
-    background-repeat: no-repeat;
+.kv-message{
+    font-size: 1.6rem;
+    letter-spacing: 0.1rem;
 }
-
-.kv-copy {
-    font-size: 8rem;
-    text-align: center;
-    color: white;
-    padding-top: 470px;
+/* animation */
+.blur{
+    animation: blurAnime;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
 }
-
-.kv-name {
-    padding-bottom: 50px;
-    font-size: 10rem;
+@keyframes blurAnime{
+    from{
+        filter: blur(10px);
+        transform: scale(1.02);
+        opacity: 0;
+    }
+    to{
+        filter: blur(0);
+        transform: scale(1);
+        opacity: 1;
+    }
 }
-
-.section-inner {
-    font-size: 3rem;
-    text-align: center;
-    margin-top: 150px;
+.blurTrigger{
+    opacity: 0;
 }
-
-.message {
-    margin-top: 40px;
-    text-align: center;
+.blur-sub{
+    animation: blurAnime-sub;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
 }
-
-.about-title {
-    background-image: url(../images/001.jpg);
-    height: 700px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    margin-top: 250px;
+@keyframes blurAnime-sub{
+    from{
+        filter: blur(10px);
+        transform: scale(1.02);
+        opacity: 0;
+    }
+    to{
+        filter: blur(0);
+        transform: scale(1);
+        opacity: 1;
+    }
 }
-
-.news-page {
-    margin-top: 50px;
-    margin-left: 400px;
+.blurTrigger-sub{
+    opacity: 0;
 }
-
-.news-page p {
-    margin-top: 20px;
-}
-
-.news-button {
-    font-size: 2rem;
-    background-color: #fff;
-    color: black;
-    display: block;
-    margin: 0 auto;
-    margin-top: 80px;
-    border-radius: 25px;
-}
-
-.news-title {
-    background-image: url(../images/002.jpg);
-    height: 1000px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    margin-top: 150px;
-}
-
-.item-title {
-    max-width: 1090px;
-    display: flex;
+/* -------------------------- */
+/* works
+/* -------------------------- */
+.works-list{
     flex-wrap: wrap;
-    justify-content: space-between;
-    margin: 0 auto;
-    margin-top: 100px;
-    object-fit: cover;
+    margin-bottom: -50px;
 }
-
-.item-size {
-    width: 200px;
-    margin-bottom: 35px;
-    object-fit: cover;
+.works-item{
+    width: 32.4%;
+    margin-bottom: 50px;
 }
-
-.footer p {
-    text-align: center;
-    padding: 20px;
-    background-color: #fff;
-    color: black;
-    margin-top: 200px;
-}
-
-.item-button {
-    font-size: 2rem;
-    background-color: #fff;
-    color: black;
+/*擬似要素-数が中途半端は時だけ生かす*/
+.works-list::after{
     display: block;
-    margin: 0 auto;
-    margin-top: 80px;
-    border-radius: 30px;
+    content:"";
+    width: 32.4%;
 }
-
-.item-money {
-    text-align: center;
+/*擬似要素-数が中途半端は時だけ生かす*/
+.works-item-featured{
+    width: 47.4%;
+}
+.works-img-wrapper{
+    margin-bottom: 8px;
+    background-color: #fff;
+    transition: .3s;
+    border: 2px solid #777;
+}
+.works-item a{
+    display: block;
+}
+.works-item a img{
+    transition: .3s;
+}
+.works-item a:hover{
+    opacity: .8;
+}
+.works-item a:hover img{
+    transform: scale(1.05,1.05);
+}
+.works-item a:hover .works-img-wrapper{
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0,0,0,.08);
+}
+.works-title{
+    font-weight: bold;
+}
+.works-category{
+    display: block;
+    font-size: 1.2rem;
+    color: #777;
     margin-top: 5px;
-    line-height: 2rem;
-    letter-spacing: 0.4rem;
+    font-weight: normal;
+}
+.twitter-logo{
+    width: 36px;
+    margin-bottom: 20px;
 }
 
-.btn {
+/* -------------------------- */
+/* about
+/* -------------------------- */
+.about-top-inner{
+    color: #333;
+}
+.about-lead{
+    margin-bottom: 60px;
+}
+.about-my-description{
     display: block;
-    padding: 20px 40px;
+    font-size: 25px;
+    margin-bottom: 5px;
+}
+.about-bg{
+    background-image: linear-gradient(270deg,#e6551e,#f58c2d);
+    -webkit-clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 85%);
+}
+/* -------------------------- */
+/* ページ内リンク
+/* -------------------------- */
+/*スクロールリンクの形状*/
+.scroll-top {
+	/*表示位置*/
+	position: fixed;
+	right: 20px;
+	bottom: 10px;
+	z-index: 2;
+	/*はじめは非表示*/
+	opacity: 0;
+	visibility: hidden; 
+	transition: opacity .5s, visibility .5s; /*それぞれに0.5秒の変化のアニメーション*/
+	/*縦書き*/
+	-webkit-writing-mode: vertical-rl;
+    -ms-writing-mode: tb-rl;
+    writing-mode: vertical-rl;
+	/*改行禁止*/
+    white-space: nowrap;
+	/*矢印の動き*/
+	animation: arrowmove 1s ease-in-out infinite;
+}
+
+@keyframes arrowmove{
+      0%{bottom:20px;}
+      50%{bottom:25px;}
+     100%{bottom:20px;}
+ }
+
+
+/*.scroll-viewクラスがついたら出現*/
+.scroll-top.scroll-view {
+	opacity: 1;
+	visibility: visible;
+}
+
+/*リンク全体の aタグの形状*/
+.scroll-top a {
+	text-decoration: none;
+	color: #000000;
+	text-transform: uppercase;
+	font-size:1.6rem;
+    display: block;
+}
+
+/*スクロールリンクの形状*/
+
+.js-scroll a::after{
+	content:"";
+	position: absolute;
+	top:0;
+	right:0;
+	width:1px;
+	height: 50px;
+	background:#666;
+}
+
+.js-scroll a::before {
+    content: "";
+    position: absolute;
+    top: 30px;
+    right: -6px;
+    width: 1px;
+    height: 20px;
+    background: #666;
+    transform: skewX(-31deg);
+}
+
+/*Edge IE11 hack*/
+_:-ms-lang(x), .js-scroll a::before{
+	right:-11px;
+}
+
+/*ページトップリンクの形状*/
+
+.js-pagetop a::after{
+	content:"";
+	position: absolute;
+	top:0;
+	right:0;
+	width:1px;
+	height: 50px;
+	background:#666;
+}
+
+.js-pagetop a::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: -6px;
+    width: 1px;
+    height: 20px;
+    background: #666;
+    transform: skewX(31deg);
+}
+
+/*Edge IE11 hack*/
+_:-ms-lang(x), .js-pagetop a::before{
+	right:0;
+}
+
+@media screen and (max-width:768px){
+    /* ---------------------- */
+    /* kv
+    /* ---------------------- */
+    .kv-wrapper{
+        height: 62vh;
+        min-height: 280px;
+    }
+    .kv-message{
+        line-height: 1.5;
+        padding: 0 20px;
+    }
+    /* ---------------------- */
+    /* works
+    /* ---------------------- */
+    .works-item{
+        width: 100%;
+        margin-bottom: 24px;
+    }
+    .about-top{
+        display: none;
+    }
+}
+@media screen and (max-width:375px){
+    .kv-wrapper{
+        height: 62vh;
+        min-height: 280px;
+    }
+    .kv-name{
+        font-size: 1.6rem;
+    }
+    .kv-animation{
+        background-image: linear-gradient(90deg,#e6551e,#f58c2d);
+        -webkit-clip-path: polygon(0 30%,100% 40%, 100% 60%, 0 70%);
+    }
+    .about-my-description{
+        font-size: 1.6rem;
+
+    }
 }
