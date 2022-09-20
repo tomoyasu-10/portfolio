@@ -4,19 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Watanabe Tomoyasu | Webデザイナーを目指す(Watanabe Tomoyasu)のポートフォリオサイトです</title>
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/common.css">
-    <link rel="stylesheet" href="css/custom.css">
+    <title>Zero アパレルブランドの販売</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
     <link rel="icon" type="image/png" href="images/favicon.png">
     <meta property="og:url" content="https://tomo-zero.netlify.app/">
     <meta property="og:type" content="website">
-    <meta property="og:title" content="Webデザイナーを目指す(Watanabe Tomoyasu)のポートフォリオサイトです">
-    <meta property="og:description" content="Watanabe Tomoyasuのポートフォリオサイトです">
+    <meta property="og:title" content="アパレル販売">
+    <meta property="og:description" content="アパレル販売のサイト">
     <meta property="og:image" content="https://drive.google.com/drive/my-drive">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:site" content="@zeroofzero00000">
@@ -24,12 +24,15 @@
 </head>
 <body>
     <!-- header -->
-    <header class="header flex-rr">
-        <h1 class="site-title"><a href="#">Watanabe Tomoyasu</a></h1>
+    <header class="header">
         <nav class="header-nav">
-            <ul class="nav-list flex-rc">
-                <li class="nav-item current"><a href="#works">Works</a></li>
-                <li class="nav-item"><a href="about/index.html">About</a></li>
+            <ul class="nav-list">
+                <li class="nav-item"><a href="#HOME">HOME</a></li>
+                <li class="nav-item"><a href="#ABOUT">ABOUT</a></li>
+                <li class="nav-item"><a href="#NEWS">NEWS</a></li>
+                <li class="nav-item"><a href="#ITEM">ITEM</a></li>
+                <li class="nav-item"><a href="#CATEGORY">CATEGORY</a></li>
+                <li class="nav-item"><a href="#CONTACT">CONTACT</a></li>
             </ul>
         </nav>
     </header>
@@ -37,187 +40,86 @@
     <!-- main -->
     <main>
         <!-- kv-wrapper -->
-        <div class="kv-wrapper kv-animation kv-animation-bg">
-            <div class="kv-copy text-center">
+        <div class="kv-wrapper">
+            <div class="kv-copy">
                 <!--<p class="my-name">Watanabe Tomoyasu</p>-->
-                <p class="kv-name"><span class="blurTrigger">あなたの言葉や想いに貢献するために。</span></p>
+                <p class="kv-name"><span class="blurTrigger">Life For Fishing</span></p>
                 <p class="kv-message">
-                    <span class="blurTrigger-sub">To Good Designer</span>
+                    <span class="kv-sub">釣りをもっと日常に。</span>
                 </p>
             </div>
         </div>
         <!-- //kv-wrapper -->
-        <!-- featured works -->
-        <section class="section-wrapper main-bg">
-            <div class="section-inner section-size">
-                <h2 class="section-title text-center">Featured Works</h2>
-                <ul class="works-list flex-rc">
-                    <li class="works-item works-item-featured">
-                        <a href="works/invoice/index.html">
-                            <div class="works-img-wrapper">
-                                <img src="./images/mock_thum_invoice.png" alt="制作実績のモックアップ">
-                            </div>
-                            <h3 class="works-title">
-                                INVOICE
-                                <span class="works-category">コーポレートサイト</span>
-                            </h3>
-                        </a>
-                    </li>
-                    <li class="works-item works-item-featured">
-                        <a href="works/LPcreate/index.html">
-                            <div class="works-img-wrapper">
-                                <img src="images/mock_thum_lpcreate.png" alt="制作実績のモックアップ">
-                            </div>
-                            <h3 class="works-title">
-                                LPcreate
-                                <span class="works-category">ランディングページ</span>
-                            </h3>
-                        </a>
-                    </li>
-                    <li class="works-item works-item-featured">
-                        <a href="works/lightlounge/index.html">
-                            <div class="works-img-wrapper">
-                                <img src="./images/mock_thum_Light-Lounge.png" alt="制作実績のモックアップ">
-                            </div>
-                            <h3 class="works-title">
-                                Light Lounge
-                                <span class="works-category">ランディングページ</span>
-                            </h3>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </section>
-        <!-- //featured works-->
-        <!-- other works -->
-        <section id="area-2" class="section-wrapper main-bg">
-            <div class="section-inner section-size">
-                <h2 class="section-title text-center">Other Works</h2>
-                <ul class="works-list flex-rc">
-                    <li class="works-item">
-                        <a href="works/jerateriamako/index.html">
-                            <div class="works-img-wrapper">
-                                <img src="images/mock_thum_Gelateria-Mako.png" alt="制作実績のモックアップ">
-                            </div>
-                            <h3 class="works-title">
-                                Gelateria Mako
-                                <span class="works-category">店舗サイト</span>
-                            </h3>
-                        </a>
-                    </li>                    
-                    <li class="works-item">
-                        <a href="works/rc-creation/index.html">
-                            <div class="works-img-wrapper">
-                                <img src="./images/mock_thum_rc-creation.png" alt="制作実績のモックアップ">
-                            </div>
-                            <h3 class="works-title">
-                                RC Creation inc.
-                                <span class="works-category">ファーストビューデザイン</span>
-                            </h3>
-                        </a>
-                    </li>
-                    <li class="works-item">
-                        <a href="works/raula/index.html">
-                            <div class="works-img-wrapper">
-                                <img src="./images/mock_thum_raula.png" alt="制作実績のモックアップ">
-                            </div>
-                            <h3 class="works-title">
-                                Raula
-                                <span class="works-category">ファーストビューデザイン</span>
-                            </h3>
-                        </a>
-                    </li>
-                    <li class="works-item">
-                        <a href="works/tech-junior/index.html">
-                            <div class="works-img-wrapper">
-                                <img src="./images/mock_thum_tech-junior.png" alt="制作実績のモックアップ">
-                            </div>
-                            <h3 class="works-title">
-                                TECH JUNIOR
-                                <soan class="works-category">ファーストビューデザイン</soan>
-                            </h3>
-                        </a>
-                    </li>
-                    <li class="works-item">
-                        <a href="works/tech-camp/index.html">
-                            <div class="works-img-wrapper">
-                                <img src="./images/mock_thum_tech-camp.png" alt="制作実績のモックアップ">
-                            </div>
-                            <h3 class="works-title">
-                                TECH CAMP
-                                <span class="works-category">Webバナー</span>
-                            </h3>
-                        </a>
-                    </li>
-                    <li class="works-item">
-                        <a href="works/design-school/index.html">
-                            <div class="works-img-wrapper">
-                                <img src="./images/mock_thum_design_school.png" alt="制作実績のモックアップ">
-                            </div>
-                            <h3 class="works-title">
-                                Design School
-                                <span class="works-category">Webバナー</span>
-                            </h3>
-                        </a>
-                    </li>
-                    <li class="works-item">
-                        <a href="works/point-company/index.html">
-                            <div class="works-img-wrapper">
-                                <img src="./images/mock_thum_point_company.png" alt="制作実績のモックアップ">
-                            </div>
-                            <h3 class="works-title">
-                                Point Company
-                                <span class="works-category">Webバナー</span>
-                            </h3>
-                        </a>
-                    </li>
-                    <li class="works-item">
-                        <a href="works/abcd/index.html">
-                            <div class="works-img-wrapper">
-                                <img src="./images/mock_thum_abcd.png" alt="制作実績のモックアップ">
-                            </div>
-                            <h3 class="works-title">
-                                ABCDホーム
-                                <span class="works-category">Webバナー</span>
-                            </h3>
-                        </a>
-                    </li>
-                    <li class="works-item">
-                        <a href="works/intern/index.html">
-                            <div class="works-img-wrapper">
-                                <img src="images/mock_thum_intern.png" alt="制作実績のモックアップ">
-                            </div>
-                            <h3 class="works-title">
-                                Intern
-                                <span class="works-category">Webバナー</span>
-                            </h3>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </section>
-        <!-- //other works -->
         <!-- about -->
-        <section class="section-wrapper main-bg about-bg">
-            <div class="section-inner about-top-inner">
-                <h2 class="section-title section-title-aboutme">
-                    About me
-                    <span class="section-title_jp section-title-top_jp">自己紹介</span>
-                </h2>
-                <p class="about-lead multi-lines s-text-wrapper bottom-about-top">
-                    <span class="about-my-description">16年前に感じたデザインの魅力</span>渡邉友靖（わたなべともやす）と申します。16年前に初めて東京で買い物をした際に、色鮮やかな洋服やお洒落なお店、大きな広告にポスターなど目を奪われる多くのデザインに興味が湧き、デザインの正体について本気で勉強したいと思いました。しかし当時は悩んだ結果、違う道を選択しました。16年経ちましたが、改めて挑戦したいと思い決断しました。<!--<br class="about-top">プログラミングという所から<br class="about-top">Webデザイナーの存在を知り、<br class="about-top">-->
-                </p>
-                <a href="about/index.html" class="btn link-btn top-btn">view my profile</a>
-            </div>
+        <section class="section-wrapper">
+            <h2 class="section-inner">ABOUT</h2>
+            <p class="message">私たちは大好きな釣りを通じて日本の豊かな自然を感じて欲しいと思っています。
+                そうした私たちの想いを洋服に込めました。
+            </p>
+            <div class="about-title"></div>
         </section>
         <!-- //about -->
+        <!-- news -->
+        <section class="section-wrapper">
+            <h2 class="section-inner">NEWS</h2>
+            <div class="news-page">
+                <p>2022-09-03</p>
+                <p>新商品が発売しました！</p>
+            </div>
+            <div class="news-page">
+                <p>2022-09-03</p>
+                <p>弊社所属のプロスタッフが三島湖CUPで優勝しました。</p>
+            </div>
+            <div class="news-page">
+                <p>2022-09-03</p>
+                <p>弊社所属のプロスタッフが豊英湖CUPで第三位に入賞しました。</p>
+            </div>
+            <div class="news-page">
+                <p>2022-09-03</p>
+                <p>Zeroとダイブのコラボ商品が発売しました！</p>
+            </div>
+                <button class="news-button"><a class="btn" href="#news">NEWS一覧 ></a></button>
+            <div class="news-title"></div>
+        </section>
+        <!-- //news -->
+     <!-- ITEM -->
+     <section class="section-wrapper">
+        <h2 class="section-inner">ITEM</h2>
+        <div class="item-title">
+            <div class="item-images001 item-size">
+                <img src="./images/003.jpg" alt="">
+                <p class="item-money">Zgnt<br>11,000円</p>
+            </div>
+            <div class="item-images002 item-size">
+                <img src="./images/004.jpg" alt="">
+                <p class="item-money">Zpnt<br>8,500円</p>
+            </div>
+            <div class="item-images003 item-size">
+                <img src="./images/005.jpg" alt="">
+                <p class="item-money">Zpek<br>9,000円</p>
+            </div>
+            <div class="item-images004 item-size">
+                <img src="./images/006.jpg" alt="">
+                <p class="item-money">Zlst<br>5,000円</p>
+            </div>
+            <div class="item-images005 item-size">
+                <img src="./images/007.jpg" alt="">
+                <p class="item-money">Ztst<br>4,000円</p>
+            </div>
+            <div class="item-images006 item-size">
+                <img src="./images/008.jpg" alt="">
+                <p class="item-money">Zdpk<br>7,000円</p>
+            </div>
+        </div>
+        <button class="news-button"><a class="btn" href="#ITEM">ITEM一覧 ></a></button>
+    </section>
+    <!-- //ITEM -->
     </main>
     <!-- //main -->
     <!-- footer -->
-    <footer class="footer text-center main-bg">
-       <p class="js-scroll scroll-top scroll-view"><a href="#area-2">Scroll</a></p>
-       <p class="js-pagetop scroll-top"><a href="#">Page Top</a></p>
-       <p>&copy;2021 Watanabe Tomoyasu</p>
+    <footer class="footer">
+        <span class="line"></span>
+        <p>&copy;Zero, Inc. All Rights Reserved.</p>
     </footer>
     <!-- //footer -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> <!-- jQueryを読み込む -->
